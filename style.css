@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* 1.1 Elemento Centrado */
+.centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: #6dbbff;
+    font-family: fantasy; 
+}
+
+.centered-box p {
+    font-size: 2rem;
+}
+
+/* 1.2 Imagem com Texto */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Capitais Europeias */
+.capitals {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #67b6f7;
+}
+
+.capital-item {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ee0a0a;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.capital-item img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.capital-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Propriedades Flex - Círculos */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #74abcf;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Caixa Hover */
+.hover-box {
+background-color: #ff6b6b;
+color: rgb(255, 255, 255);
+width: 200px;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+font-size: 1.2rem;
+margin: 20px auto;
+transition: background-color 0.3s ease, transform 0.3s ease;
+position: relative;
+overflow: hidden; /* Previne qualquer conteúdo de exceder o tamanho da caixa */
+}
+
+.hover-box:hover {
+background-color: #003d83;
+/* Remova transformações no tamanho */
+transform: scale(1); /* Mantém o tamanho fixo */
+}

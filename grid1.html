@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Roma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Configuração do Grid */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'nav main aside'
+                'footer footer footer';
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 1fr 50px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #ff6b6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #4ecdc4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            grid-area: main;
+            background-image: url('https://source.unsplash.com/random/800x600/?nature');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #4a90e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #00ffaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .links a:hover {
+            background-color: #555;
+        }
+
+        header, nav, main, aside, footer {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <header>Bem-vindo ao Meu Site</header>
+        <nav>
+            <ul style="list-style: none;">
+                <li><a href="#" style="color: black;">Roma</a></li>
+                <li><a href="#" style="color: black;">Sobre</a></li>
+                <li><a href="#" style="color: black;">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img src="Images/istockphoto-539115110-612x612.jpg" alt="Roma">
+            <img src="Images/istockphoto-501396596-612x612.jpg" alt="Roma">
+        </main>
+        <aside> <a href="https://www.turismoroma.it/en">Site de Turismo Roma</a> </aside>
+        <footer style="color: black;">Direitos Reservados © 2024</footer>
+    </div>
+
+    <div class="links">
+        <a href="grid1.html">1</a>
+        <a href="grid2.html">2</a>
+        <a href="grid3.html">3</a>
+        <a href="grid4.html">4</a>
+        <a href="grid5.html">5</a>
+        <a href="grid6.html">6</a>
+        <a href="index.html">Flexbox</a>
+    </div>
+
+</body>
+</html>
+
